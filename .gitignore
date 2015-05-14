@@ -41,3 +41,10 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+<<<<<<< HEAD
+=======
+
+# Pantheon files directory symlink #
+####################################
+sites/db-backups
+>>>>>>> 886f4bedf2e6e712102c02b8058a1f120f28201b
