@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/todotoday"]
+	path = sites/all/modules/todotoday
+	url = https://github.com/k-giardchase/to_do_list_feature.git
