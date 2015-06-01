@@ -11,6 +11,6 @@ function welcome_menu() {
 
 
 
-function welcome_user_login($edit, $account, $category) {
+function welcome_user_login(&$edit, $account, $category) {
     $_GET['destination'] = 'welcome_new_user';
 }
