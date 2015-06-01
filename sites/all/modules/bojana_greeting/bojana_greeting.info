@@ -1,0 +1,7 @@
+name = Bojana Greeting
+description = Display greetings.
+package = Epicodus Examples
+core = 7.x
+files[] = bojana_greeting.module
+files[] = bojana_greeting.test
+dependencies[] = simpletest

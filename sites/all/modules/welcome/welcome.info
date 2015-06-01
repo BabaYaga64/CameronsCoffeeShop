@@ -1,0 +1,7 @@
+name = Welcome User
+description = Handles custom user login tasks for Cameron's Bakery.
+package = Epicodus Examples
+core = 7.x
+files[] = welcome.module
+dependencies[] = simpletest
+files[] = welcome.test

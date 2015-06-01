@@ -1,0 +1,14 @@
+<?php
+function bojana_greeting_menu() {
+    $items['hello_friend'] = array(
+        'title' => "Hello Friend!",
+        'page callback' => 'saying_hello',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+function saying_hello() {
+    return '<p>Hello my dear friend!</p>';
+}
