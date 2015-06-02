@@ -1,0 +1,39 @@
+1. Enable module, creates a menu item.
+
+'type' => MENU_NORMAL_ITEM,
+
+2. Click on the menu item, it takes you to a URL
+
+$items['title_case'] = array(
+$items[‘URL’] = array(
+
+3. So we’re at the url /title_case what do we display?
+
+whatever is produced by the function named in page callback.
+
+'page callback' => 'drupal_get_form'
+‘page callback’ => ‘say_hello’
+‘page callback’ => ‘title_case_success’
+
+
+ $items['hello_friend']   —— URL
+'page callback' => 'say_hello',  —— function to run at the URL
+function say_hello() { —— the function itself.
+
+3. drupal_get_form gets called. And it says what form should I get?
+
+We tell it to get the title_case_form by putting that name in page arguments.
+
+'page arguments' => array('title_case_form'),
+
+4. So then in our function title_case_form we tell drupal what fields we want in the form. That’s the giant array.
+
+Then the form is displayed, the user enters stuff and hits the submit button, and then we can grab the information from the form, using hook_form_submit.
+
+function title_case_form_submit($form, &$form_state) {      $title = $form_state['values']['convert_case']; 	  $thing_we_need = $form_state['values’][‘name_of_field’];
+
+	$people[‘thor’][‘phonenumber’]
+  $people[‘thor’][‘address’][‘zipcode’]
+
+all of a user’s crap that they entered into the form lives in $form_state[‘values’].
+ }
