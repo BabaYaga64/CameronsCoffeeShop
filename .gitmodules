@@ -1,6 +1,0 @@
-[submodule "sites/all/modules/todotoday"]
-	path = sites/all/modules/todotoday
-	url = https://github.com/k-giardchase/to_do_list_feature.git
-[submodule "sites/all/modules/to_do_today_feature"]
-	path = sites/all/modules/to_do_today_feature
-	url = https://github.com/k-giardchase/to_do_list_feature.git
